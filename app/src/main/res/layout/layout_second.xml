@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="375dp"
-    android:layout_height="812dp"
-    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="@font/roboto_light"
+
             android:lineHeight="18.75dp"
             android:text="@string/home"
             android:textAlignment="center"
@@ -51,7 +47,7 @@
             <TextView
                 android:layout_width="60dp"
                 android:layout_height="28dp"
-                android:fontFamily="@font/roboto_light"
+
                 android:text="NEWS"
                 android:textColor="#595085"
                 android:textStyle="bold" />
@@ -75,7 +71,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
                         android:elevation="2dp"
-                        android:fontFamily="@font/roboto_light"
+
                         android:text="@string/tex_1"
                         android:textColor="@color/white"
                         android:textSize="12sp"
@@ -103,7 +99,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
                         android:elevation="2dp"
-                        android:fontFamily="@font/roboto_light"
+
                         android:text="@string/tex_1"
                         android:textColor="@color/white"
                         android:textSize="12sp"
@@ -131,7 +127,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
                         android:elevation="2dp"
-                        android:fontFamily="@font/roboto_light"
+
                         android:text="@string/tex_1"
                         android:textColor="@color/white"
                         android:textSize="12sp"
@@ -160,8 +156,8 @@
             <TextView
                 android:layout_width="124dp"
                 android:layout_height="28dp"
-                android:fontFamily="@font/roboto_light"
-                android:text="Daily Tasks:"
+
+                android:text="Daily Task:"
                 android:textColor="#595085"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -185,8 +181,7 @@
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="12dp"
                         android:elevation="2dp"
-                        android:fontFamily="@font/roboto_light"
-                        android:lineHeight="11.72dp"
+
                         android:text="@string/daily"
                         android:textColor="#61598B"
                         android:textSize="10sp"
@@ -198,7 +193,7 @@
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="52dp"
                         android:elevation="2dp"
-                        android:fontFamily="@font/roboto_light"
+
                         android:text="3"
                         android:textAlignment="center"
                         android:textColor="#61598B"
@@ -220,9 +215,10 @@
                         app:shapeAppearanceOverlay="@style/ShapeRectangle" />
 
                 </FrameLayout>
+
                 <Space
                     android:layout_width="11dp"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent" />
 
                 <FrameLayout
                     android:layout_width="98dp"
@@ -234,9 +230,8 @@
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="12dp"
                         android:elevation="2dp"
-                        android:fontFamily="@font/roboto_light"
-                        android:lineHeight="11.72dp"
-                        android:text="Daily sleep astromeditation"
+
+                        android:text="Daily"
                         android:textColor="#FF5648"
                         android:textSize="10sp"
                         android:textStyle="bold" />
@@ -247,7 +242,7 @@
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="52dp"
                         android:elevation="2dp"
-                        android:fontFamily="@font/roboto_light"
+
                         android:text="1"
                         android:textAlignment="center"
                         android:textColor="#FF5648"
@@ -269,11 +264,65 @@
                         app:shapeAppearanceOverlay="@style/ShapeRectangle" />
 
                 </FrameLayout>
+
+                <Space
+                    android:layout_width="11dp"
+                    android:layout_height="match_parent" />
+
+                <FrameLayout
+                    android:layout_width="98dp"
+                    android:layout_height="90dp">
+
+                    <TextView
+                        android:layout_width="74dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:elevation="2dp"
+
+                        android:text="Daily"
+                        android:textColor="#479696"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="14dp"
+                        android:layout_height="28dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="52dp"
+                        android:elevation="2dp"
+
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textColor="#479696"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginStart="29dp"
+                        android:layout_marginTop="59dp"
+                        android:elevation="2dp"
+                        android:src="@drawable/task_image_3" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F5F9F9"
+                        app:shapeAppearanceOverlay="@style/ShapeRectangle" />
+
+                </FrameLayout>
             </LinearLayout>
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
         </LinearLayout>
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#FF0000"
+            android:layout_height="100dp"/>
     </LinearLayout>
-
-
 </LinearLayout>
